@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contacto</title>
+</head>
+<body>
+
+	<form method="post" action="enviar.php">
+		<input type="text" placeholder="Escribí tu nombre:" required name="Nombre">
+		<br>
+		<input type="email" placeholder="Escriba su email" required name="Correo">
+		<br>
+		<input type="password" placeholder="Ingresa tu password" required="" name="Password">
+		<br>
+		<input type="tel" placeholder="Ingresá tu teléfono" required name="Telefono">
+		<br>
+		<input type="checkbox" name="terminos" required> Acepta terminos y condiciones.
+		<br>
+		<label for="Producto">Elegí un producto:</label>
+		<select name="Producto">
+			<option value="producto1">Plan Básico</option>
+			<option value="producto2">Plan Medio</option>
+			<option value="producto3">Plan Premium</option>
+		</select>
+		<br>
+		<input type="radio" name="pago" value="Tarjeta"> Tarjeta de Crédito
+		<br>
+		<input type="radio" name="pago" value="Efectivo"> Efectivo
+		<br>
+		<input type="radio" name="pago" value="Transferencia"> Transferencia
+		<br>
+		<label for="mensaje">Mensajes:</label>
+		<br>
+		<textarea name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
+		<br>
+		<input type="submit" name="Enviar formulario">
+	</form>
+
+</body>
+</html>
